@@ -1,6 +1,0 @@
-{"timestamp":"2026-10-03T10:15:05.919387","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2026-10-03T10:15:05.920581","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/user_processing.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2026-10-03T10:15:05.964350","level":"info","event":"Running copy expert: copy users from stdin with csv header, filename: /tmp/user_info.csv","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
-{"timestamp":"2026-10-03T10:15:05.965940","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
-{"timestamp":"2026-10-03T10:15:05.985449","level":"info","event":"Connection Retrieved 'postgres'","logger":"airflow.hooks.base"}
-{"timestamp":"2026-10-03T10:15:05.991602","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}

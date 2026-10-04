@@ -1,8 +1,0 @@
-{"timestamp":"2026-10-03T10:05:11.188674","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2026-10-03T10:05:11.189131","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/user_processing.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2026-10-03T10:05:11.299572","level":"info","event":"Executing: \n        create table if not exists users(\n        id int primary key,\n        firstname varchar(255),\n        lastname varchar(255),\n        email varchar(255)\n        )\n        ","logger":"airflow.task.operators.airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator"}
-{"timestamp":"2026-10-03T10:05:11.328089","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
-{"timestamp":"2026-10-03T10:05:12.690069","level":"info","event":"Connection Retrieved 'postgres'","logger":"airflow.hooks.base"}
-{"timestamp":"2026-10-03T10:05:12.691412","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
-{"timestamp":"2026-10-03T10:05:12.700050","level":"info","event":"Connection Retrieved 'postgres'","logger":"airflow.hooks.base"}
-{"timestamp":"2026-10-03T10:05:12.703001","level":"info","event":"Running statement: \n        create table if not exists users(\n        id int primary key,\n        firstname varchar(255),\n        lastname varchar(255),\n        email varchar(255)\n        )\n        , parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
