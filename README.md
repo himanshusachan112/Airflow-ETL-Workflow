@@ -27,7 +27,7 @@ DAGs, logs, plugins, and config are mounted from local `dags/`, `logs/`, `plugin
 
 
 ## User Processing DAG
-The `user_processing` DAG creates a PostgreSQL `users` table, then checks a public fake-user JSON endpoint every 30 seconds (for up to 5 minutes). When the endpoint responds successfully, it extracts the user's ID, first name, last name, and email, writes them to `/tmp/user_info.csv`, and loads the CSV row into PostgreSQL using `PostgresHook`.
+The `user_processing.py` DAG creates a PostgreSQL `users` table, then checks a public fake-user JSON endpoint every 30 seconds (for up to 5 minutes). When the endpoint responds successfully, it extracts the user's ID, first name, last name, and email, writes them to `/tmp/user_info.csv`, and loads the CSV row into PostgreSQL using `PostgresHook`.
 
 
 
