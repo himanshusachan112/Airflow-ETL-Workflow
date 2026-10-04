@@ -34,6 +34,11 @@ The `user_processing.py` DAG creates a PostgreSQL `users` table, then checks a p
 ## User Assets
 The `user.py` file defines a daily `user` asset that fetches JSON data from `randomuser.me/api/`. A downstream multi-asset, scheduled by `user`, reads the fetched data and materializes two assets: `user_location` and `user_login`.
 
+===============================queue and adding worker=====================================
+
+## Celery Queue DAG
+The `celery.py` file defines a DAG where task `a` runs first, followed by tasks `b` and `c` in parallel, then task `d` after both finish. Each task sleeps for five seconds; `b`, `c`, and `d` are assigned to the `high_cpu` queue.
+
 
 
 
